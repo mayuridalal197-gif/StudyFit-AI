@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFit AI</title>
+
+    <link rel="stylesheet" href="css files/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>StudyFit AI</h1>
+
+        <p>Study Smarter. Stay Healthier.</p>
+
+
+        <!-- LOGIN -->
+
+        <div id="loginBox">
+
+            <h2>🔐 Student Login</h2>
+
+
+            <input type="email" id="loginEmail" placeholder="Enter your email">
+
+
+            <input type="password" id="loginPassword" placeholder="Enter your password">
+
+
+            <button onclick="loginStudent()">
+                Login
+            </button>
+
+
+            <p id="loginMessage"></p>
+
+
+            <p>
+                Don't have an account?
+
+                <button class="link-button" onclick="showSignup()">
+                    Create Account
+                </button>
+
+            </p>
+
+        </div>
+
+
+        <!-- SIGNUP -->
+
+        <div id="signupBox" style="display: none;">
+
+            <h2>📝 Create Account</h2>
+
+
+            <input type="text" id="signupName" placeholder="Enter your name">
+
+
+            <input type="email" id="signupEmail" placeholder="Enter your email">
+
+
+            <input type="password" id="signupPassword" placeholder="Create a password">
+
+
+            <button onclick="signupStudent()">
+                Sign Up
+            </button>
+
+
+            <p id="signupMessage"></p>
+
+
+            <p>
+
+                Already have an account?
+
+                <button class="link-button" onclick="showLogin()">
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+
+        <!-- Dashboard -->
+
+        <button id="dashboardButton" style="display: none;" onclick="goToDashboard()">
+            📊 Go to Dashboard
+        </button>
+
+
+    </div>
+
+
+    <script src="js files/app.js"></script>
+
+</body>
+
+</html>

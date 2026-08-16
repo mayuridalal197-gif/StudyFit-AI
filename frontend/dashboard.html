@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFit AI Dashboard</title>
+
+    <link rel="stylesheet" href="css files/dashboard.css">
+
+</head>
+
+<body>
+    <div class="user-header">
+
+        <div>
+            <h2>
+                👋 Welcome,
+                <span id="studentName">Student</span>
+            </h2>
+
+            <p>
+                Stay focused. Stay healthy. 💪
+            </p>
+        </div>
+
+
+        <button onclick="logoutStudent()" class="logout-btn">
+            🚪 Logout
+        </button>
+
+    </div>
+
+    <header class="topbar">
+
+        <div>
+            <h1>📚 StudyFit AI</h1>
+            <p>Your Smart Study & Wellness Dashboard</p>
+        </div>
+
+        <a href="/planner.html" class="new-plan-btn">
+            + New Study Plan
+        </a>
+
+    </header>
+
+
+    <main class="dashboard">
+
+        <!-- Welcome -->
+
+        <section class="welcome">
+
+            <h2>Welcome back, Student 👋</h2>
+
+            <p>
+                Stay focused, study smart and take care of yourself.
+            </p>
+
+        </section>
+
+
+        <!-- Plan Container -->
+
+        <div id="plansContainer">
+
+            <p class="loading">
+                Loading your study plan...
+            </p>
+
+        </div>
+        <!-- Wellness Summary -->
+
+        <section class="wellness-section">
+
+            <h2>🌿 Wellness Summary</h2>
+
+            <p>
+                Your latest wellness performance and AI insights.
+            </p>
+
+            <div id="wellnessScore"></div>
+
+            <div id="wellnessDetails"></div>
+
+            <div id="wellnessHistory"></div>
+
+        </section>
+    </main>
+
+
+    <script src="js files/dashboard.js"></script>
+
+</body>
+
+</html>

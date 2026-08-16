@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Study Planner</title>
+
+    <link rel="stylesheet" href="css files/style.css">
+
+</head>
+
+<body>
+
+    <div class="planner-container">
+
+        <h1>🤖 AI Study Planner</h1>
+
+        <p>Create your personalized study plan</p>
+
+        <form id="plannerForm">
+
+            <label>
+                Subjects & Study Time
+            </label>
+
+            <div id="subjectsContainer">
+
+                <div class="subject-row">
+
+                    <input type="text" class="subject-input" placeholder="Subject name (e.g. Java)" required>
+
+                    <input type="number" class="subject-hours" min="0.5" max="12" step="0.5" placeholder="Hours"
+                        required>
+
+                    <button type="button" class="remove-subject" onclick="removeSubject(this)" style="display: none;">
+                        ✕
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button type="button" id="addSubjectBtn" onclick="addSubject()">
+                + Add Subject
+            </button>
+
+            <p id="totalHoursDisplay">
+                Total Study Time: <strong>0 hours</strong>
+            </p>
+
+            <label for="hours">
+                Daily Study Hours
+            </label>
+
+            <input type="number" id="hours" min="1" max="12" placeholder="Example: 5" required>
+
+            <label for="examDate">
+                Exam Date
+            </label>
+
+            <input type="date" id="examDate" required>
+
+            <button type="submit">
+                Generate AI Study Plan 🤖
+            </button>
+
+        </form>
+
+        <!-- TEMPORARY NOTIFICATION TEST -->0
+
+        <div id="loading" class="hidden">
+            Generating your study plan...
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+    <div id="notificationStatus"></div>
+    <script src="js files/planner.js"></script>
+
+</body>
+
+</html>
